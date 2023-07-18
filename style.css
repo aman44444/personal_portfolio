@@ -39,7 +39,7 @@ body::-webkit-scrollbar {
 .nav-font a{
   text-decoration: none;
   color: #818181;
- 
+
 }
 
 .sidebar a:hover {
@@ -129,9 +129,10 @@ i{
   margin-bottom: 5rem;
   display:flex;
   justify-content: center;
-  width:100%;
+  width:60%;
   height:100vh;
   flex-wrap: wrap;
+margin-inline: auto;
 
   
 }
@@ -158,6 +159,26 @@ i{
 .sub-div:hover{
   transform: rotateY(180deg);
 }
+
+.project-link{
+ position: absolute;
+ bottom: 2em;
+}
+
+.link-button{
+border-radius: 10px;
+width:50px;
+border: 1px solid black;
+background-color: #818181;
+
+
+}
+
+.link-button a{
+ text-decoration: none;
+ color: #111;
+  
+  }
 
 .flip-front,.flip-back {
  display: flex;
@@ -263,7 +284,7 @@ i{
 }
 
 .sidebar p{
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 25px;
   text-decoration: none;
   font-size: 1rem;
   color: #818181;
@@ -498,3 +519,88 @@ html{
 
 }
 
+/* @media screen and (max-width: 480px) {
+  .container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    display:flex;
+    justify-content: center;
+    width:60%;
+    height:100vh;
+    flex-wrap: wrap;
+  margin-inline: auto;
+  
+    
+  }
+  
+  .sub-div{
+    display:flex;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    align-items: center;
+   border: 1px solid grey;
+    width:150px;
+    height:100px;
+    position: relative;
+    perspective: 1000px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    margin-top: 2em;
+    box-shadow: 6px 10px 21px -10px rgba(0,0,0,0.75);
+  }
+} */
+
+
+@media screen and (max-width: 900px) {
+  .container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    display:flex;
+    justify-content: center;
+    width:60%;
+    height:100vh;
+    flex-wrap: wrap;
+  margin-inline: auto;
+  
+    
+  }
+  
+  .sub-div{
+    display:flex;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    align-items: center;
+   border: 1px solid grey;
+    width:150px;
+    height:100px;
+    position: relative;
+    perspective: 1000px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    margin-top: 2em;
+    box-shadow: 6px 10px 21px -10px rgba(4, 4, 4, 0.75);
+    font-size: 8px;
+  }
+
+  .sidebar p{
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #818181;
+    display: block;
+    transition: 0.8s;
+    cursor: pointer;
+  }
+}
